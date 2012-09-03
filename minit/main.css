@@ -200,8 +200,9 @@ body {
 	padding: 20px 0 0;
 	width: 70em;
 	background-color: white;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAIklEQVQoU2P8DwQMRADGUYX4Qmk0ePCmoSERPO3nXhOVFQBJsk8I3KucbwAAAABJRU5ErkJggg==);
+	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAIklEQVQoU2P8DwQMRADGUYX4Qmk0ePCmoSERPO3nXhOVFQBJsk8I3KucbwAAAABJRU5ErkJggg==);
 	background-repeat: repeat;
+	*/
 }
 
 #firstHeading {
