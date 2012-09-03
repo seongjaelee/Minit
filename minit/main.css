@@ -109,7 +109,7 @@ acronym     { border-bottom: 1px dotted #666; }
 address     { margin: 0 0 20px; font-style: italic; }
 del         { color:#666; }
 
-pre         { margin: 20px 0; white-space: pre; }
+pre         { margin: 20px 0; white-space: pre-wrap; }
 pre,code,tt { font: 11px 'andale mono', 'lucida console', monospace; line-height: 20px; }
 
 /* Lists */
@@ -130,11 +130,11 @@ dd          { margin-left: 20px;}
 	on table cells has to be 27px, instead of the standard 18px or 36px 
 	of other elements. 
  */ 
-table       { margin-bottom: 19px; width:100%; }
+table       { margin-bottom: 20px; width:100%; }
 th          { font-weight: bold; }
 thead th    { background: #c3d9ff; }
-th,td       { padding: 0px 10px 0px 5px; line-height: 19px; border: 1px solid #AAA;}
-caption     { line-height: 20px; }
+th,td       { padding: 0px 10px 0px 5px; border: 0;}
+caption     { }
 /*
 	You can zebra-stripe your tables in outdated browsers by adding 
 	the class "even" to every other table row. 
@@ -147,21 +147,6 @@ tfoot       { font-style: italic; }
 caption     { background: #eee; }
 
 /* Misc classes */
-.small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
-.large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
-.hide       { display: none; }
-
-.quiet      { color: #666; }
-.loud       { color: #000; }
-.highlight  { background:#ff0; }
-.added      { background:#060; color: #fff; }
-.removed    { background:#900; color: #fff; }
-
-.first      { margin-left:0; padding-left:0; }
-.last       { margin-right:0; padding-right:0; }
-.top        { margin-top:0; padding-top:0; }
-.bottom     { margin-bottom:0; padding-bottom:0; }
-
 label       { font-weight: bold; }
 fieldset    { line-height: 20px; padding:19px 1.4em 20px 1.4em; margin: 0 0 20px 0; border: 1px solid #ccc; }
 legend      { }
@@ -215,10 +200,8 @@ body {
 	padding: 20px 0 0;
 	width: 70em;
 	background-color: white;
-	/*
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAIklEQVQoU2P8DwQMRADGUYX4Qmk0ePCmoSERPO3nXhOVFQBJsk8I3KucbwAAAABJRU5ErkJggg==);
 	background-repeat: repeat;
-	*/
 }
 
 #firstHeading {
@@ -258,10 +241,13 @@ body {
 #footer ul { margin: 0; padding: 0; }
 #footer li { display: inline; padding-right: 1em; }
 
-#toc td { padding: 0; }
+#toc table { padding: 0; }
+#toc td { padding: 0; border: 0; }
 #toc ul { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
 #toc ul ul { margin: 0; }
-#toc { display: none; } /* later */
+#toc { border: 0; }
+#toc h2 { display: inline; }
+#toc .toctoggle { display: inline; }
 
 .editsection { font-size: 12px; font-weight: normal; }
 
@@ -282,8 +268,8 @@ ul#filetoc { padding: 4px; margin-bottom: 10px; font-size: 100%; }
 /* search bar */
 #p-search { position: absolute; top: 74px;}
 #p-search h2 { display: none; }
-#searchBody input[type="search"] { font-size: 20px; width: 110px; }
-#searchBody input[type="submit"] { font-size: 20px; margin-left: 0; margin-right: 0; }
+#searchBody input[type="search"] { width: 110px; }
+#searchBody input[type="submit"] { margin-left: 0; margin-right: 0; }
 
 /* End Minit Layout */
 
