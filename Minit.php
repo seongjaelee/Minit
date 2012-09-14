@@ -118,7 +118,10 @@ class MinitTemplate extends BaseTemplate {
 	<?php endforeach; ?>
 	</ul>
 <?php endforeach; ?>
-Powered by <a href="http://www.mediawiki.org" target="_blank">MediaWiki</a>, Skined by <a href="http://bluebrown.net" target="_blank">Seong Jae Lee</a>
+	<ul>
+		<li>Powered by <a href="http://www.mediawiki.org" target="_blank">MediaWiki</a></li>
+		<li>Skined by <a href="http://bluebrown.net" target="_blank">Seong Jae Lee</a></li>
+	</ul>
 </div>
 <?php
 		$this->printTrail();
