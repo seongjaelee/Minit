@@ -23,21 +23,13 @@ class SkinMinit extends SkinTemplate {
 		$this->stylename = 'minit';
 		$this->template = 'MinitTemplate';
 		$this->useHeadElement = true;
-		
-		$out->addModuleScripts( 'skins.minit' );
+		$out->addModuleStyles( 'skins.minit' );
 	}
 
 	function setupSkinUserCss( OutputPage $out ) {
 		global $wgHandheldStyle;
 		
 		parent::setupSkinUserCss( $out );
-		
-		$out->addStyle( 'minit/main.css', 'screen' );
-
-		if ( $wgHandheldStyle ) {
-			$out->addStyle( $wgHandheldStyle, 'handheld' );
-		}
-		$out->addModuleStyles( 'skins.minit' );
 	}
 }
 

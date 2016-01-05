@@ -1,0 +1,33 @@
+{
+	"name": "Minit skin",
+	"author": [
+		"[https://github.com/seongjaelee Seongjae Lee]"
+	],
+	"url": "https://github.com/seongjaelee/Minit",
+	"descriptionmsg": "naiad-desc",
+	"type": "skin",
+	"license-name" : "GPL-2.0+",
+	"license": [ "GPL-2.0+" ],
+	"ValidSkinNames": {
+		"minit": "Minit"
+	},
+	"AutoloadClasses": {
+		"SkinMinit": "Minit.php",
+		"MinitTemplate": "Minit.php"
+	},
+	"ResourceModules": {
+		"skins.minit": {
+			"position": "top",
+			"styles": {
+				"minit/main.css": {
+					"media": "screen"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteBasePath": "skins/Minit"
+	},
+	"manifest_version": 1
+}
