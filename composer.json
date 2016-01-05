@@ -1,0 +1,33 @@
+{
+	"name": "saper/minit-skin",
+	"type": "mediawiki-skin",
+	"description": "Minimalistic skin for MediaWiki",
+	"keywords": [
+		"wiki",
+		"MediaWiki",
+		"skin"
+	],
+	"homepage": "https://github.com/seongjaelee/Minit",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Seongjae Lee"
+		}
+	],
+	"support": {
+		"source": "https://github.com/seongjaelee/Minit"
+	},
+	"extra": {
+		"installer-name": "Minit"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9.*",
+		"mediawiki/mediawiki-codesniffer": "0.5.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs -p -s"
+		]
+	}
+}

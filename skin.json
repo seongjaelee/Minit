@@ -4,7 +4,7 @@
 		"[https://github.com/seongjaelee Seongjae Lee]"
 	],
 	"url": "https://github.com/seongjaelee/Minit",
-	"descriptionmsg": "naiad-desc",
+	"description": "A minimalistic MediaWiki skin. Originally developed for a personal wiki written in Korean.",
 	"type": "skin",
 	"license-name" : "GPL-2.0+",
 	"license": [ "GPL-2.0+" ],
